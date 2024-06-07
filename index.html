@@ -126,7 +126,81 @@
             </div>
         </div>
 
-        
+        <!--Создание секции "Мое портфолио": .section.portfolio>.container>.card*4-->
+        <div class="section portfolio" id="portfolio">
+            <div class="container">
+                <div class="titul">
+                    <h1>МОЕ ПОРТФОЛИО</h1>
+                    <h5>Сделанные ранее сайты</h5>
+                </div>
+                <div class="main mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="card swiper-slide" style="width: 375px;">
+                            <img src="./assets/img/Mask group (2).png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Monochrom</h5>
+                              <p class="card-text">Второй сайт, который мы пробовали делать по макету.</p>
+                              <a href="https://kseniaaly.github.io/Monochrom_New/" class="button">ПЕРЕЙТИ НА САЙТ</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide" style="width: 375px;">
+                            <img src="./assets/img/Mask group(1).png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Mimilo</h5>
+                              <p class="card-text">Первый сайт, который мы пробовали делать по макету.</p>
+                              <a href="https://kseniaaly.github.io/Mimilo_Al/" class="button">ПЕРЕЙТИ НА САЙТ</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide" style="width: 375px;">
+                            <img src="./assets/img/Mask group.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">MoGo</h5>
+                              <p class="card-text">Перввый сайт, который мы учились делать.</p>
+                              <a href="https://kseniaaly.github.io/MoGo_Al/" class="button">ПЕРЕЙТИ НА САЙТ</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide" style="width: 375px;">
+                            <img src="./assets/img/Mask group(3).png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">LiveTV</h5>
+                              <p class="card-text">Последний сайт, который мы делали по макету.</p>
+                              <a href="https://kseniaaly.github.io/LiveTV/" class="button">ПЕРЕЙТИ НА САЙТ</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide" style="width: 375px;">
+                            <img src="./assets/img/Mask group (4).png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Cyprus</h5>
+                              <p class="card-text">Первый сайт, который мы сделали на учебной практике.</p>
+                              <a href="https://kseniaaly.github.io/Cyprus/" class="button">ПЕРЕЙТИ НА САЙТ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            });
+        </script>
     </main>
     <footer>
         
